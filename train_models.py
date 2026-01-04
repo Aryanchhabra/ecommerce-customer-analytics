@@ -77,7 +77,7 @@ def train_churn_model(rfm):
     with open('models/churn_scaler.pkl', 'wb') as f:
         pickle.dump(scaler, f)
     
-    print("✓ Churn model saved to models/churn_model.pkl")
+    print("Churn model saved to models/churn_model.pkl")
     return model, scaler
 
 def train_clv_model(rfm):
@@ -117,7 +117,7 @@ def train_clv_model(rfm):
     with open('models/clv_scaler.pkl', 'wb') as f:
         pickle.dump(scaler, f)
     
-    print("✓ CLV model saved to models/clv_model.pkl")
+    print("CLV model saved to models/clv_model.pkl")
     return model, scaler
 
 def main():
@@ -138,7 +138,7 @@ def main():
     clv_model, clv_scaler = train_clv_model(rfm)
     
     print("\n" + "=" * 50)
-    print("✓ All models trained and saved successfully!")
+    print("All models trained and saved successfully!")
     print("=" * 50)
 
 if __name__ == "__main__":
